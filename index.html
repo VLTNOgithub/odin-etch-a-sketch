@@ -9,7 +9,20 @@
     <script src="./script.js"></script>
 </head>
 <body>
-    <h1>Etch-A-Sketch!</h1>
-    <div id="drawablesContainer" oncontextmenu="return false"></div>
+    <div class="container">
+        <h1>Etch-A-Sketch!</h1>
+        <div class="options-container">
+            <div class="mode-container">
+                Mode:
+                <select id="mode">
+                    <option>Color</option>
+                    <option>RGB</option>
+                    <option>Darken</option>
+                </select>
+            </div>
+            <input type="color" id="colorpicker">
+        </div>
+        <div id="drawablesContainer" oncontextmenu="return false"></div>
+    </div>
 </body>
 </html>

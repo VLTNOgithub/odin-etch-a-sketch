@@ -10,29 +10,71 @@ body {
     padding: 0px;
     color: white;
     font-family: Tahoma;
+}
+
+h1 {
+    margin: 0px;
+}
+
+select {
+    background-color: grey;
+    color: white;
+    padding: 0px;
+    font-size: 14px;
+    border-radius: 5px;
+    min-width: 80px;
+    min-height: 30px;
+    max-width: 80px;
+    max-height: 30px;
+    align-self: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.mode-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 8px;
+    align-self: flex-start;
 }
 
 .drawable {
-    border: 2px solid grey;
     min-width: 26px;
     min-height: 26px;
     max-width: 26px;
     max-height: 26px;
     margin: 0px;
     user-select: none;
+    opacity: 1;
 }
 
-.drawable:hover {
-    opacity: 0.8;
+#colorpicker {
+    background-color: grey;
+    border: none;
+    border-radius: 5px;
 }
 
 #drawablesContainer {
     border: 2px solid white;
-    min-width: 480px;
-    max-width: 480px;
-    min-height: 480px;
-    max-height: 480px;
+    min-width: 416px;
+    max-width: 416px;
+    min-height: 416px;
+    max-height: 416px;
     display: flex;
     flex-wrap: wrap;
     margin: 0px;
